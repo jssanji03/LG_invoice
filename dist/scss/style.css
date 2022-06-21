@@ -12180,14 +12180,12 @@ table.dataTable thead {
 
 table.dataTable thead tr {
   color: #085f91;
-  font-size: 16px;
   font-weight: 700;
 }
 
 table.dataTable thead tr th {
   border-bottom: 1px solid #e0e0e0;
   font-weight: 500;
-  font-size: 14px;
   text-align: center;
   padding: 8px;
   vertical-align: middle;
