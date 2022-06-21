@@ -12327,14 +12327,6 @@ table.dataTable tfoot th {
     text-align: start !important;
     color: #325eaf;
   }
-  .datatable-RWDcard tfoot tr th input.form-control,
-  .datatable-RWDcard tfoot tr td input.form-control {
-    width: 90%;
-  }
-  .datatable-RWDcard tfoot tr th select.form-select,
-  .datatable-RWDcard tfoot tr td select.form-select {
-    width: 90%;
-  }
 }
 
 body {
