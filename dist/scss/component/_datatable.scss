@@ -1,0 +1,198 @@
+// DataTable 基本樣式 //
+table.dataTable tbody th, 
+table.dataTable tbody td{
+    padding: 15px 0px;
+    // border: none;
+}
+table.dataTable{
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid rgb(204, 204, 204);
+    thead{
+      width: 100%;
+      tr{
+        color: rgb(8, 95, 145);
+        font-size: 16px;
+        font-weight: 700;
+        th{
+          border-bottom: 1px solid rgb(224, 224, 224);
+          font-weight: 500 ;
+          font-size: 14px;
+          text-align: center;
+          padding: 8px;
+          vertical-align: middle;
+          line-height: 20px;
+          white-space:nowrap
+          }
+        }
+    }
+    tbody{
+        tr{
+          padding: 0px;
+          border: 1px solid rgba(134, 200, 238, 0.329);
+          td{
+            vertical-align: middle;
+            outline: none;
+            padding: 8px;
+            white-space:nowrap;
+            text-align: end;
+          }
+          &:nth-child(odd){
+              background-color: rgb(234, 245, 252) !important;
+          }
+        }
+    }
+    tfoot{
+      th{
+          border-top:2px solid #000 ;
+          text-align: end;
+      }
+    }
+}
+// DataTable 基本樣式 End //
+
+
+// DataTable Card樣式 Start //
+.datatable-RWDcard {
+  @media (max-width: 992px) {
+    border: none !important;
+    // background-color: transparent !important;
+    min-width: 100%;
+
+    /*針對tr去做隱藏*/
+    thead {
+      .tr-only-hide {
+        display: none !important;
+      }
+
+    }
+
+    tbody {
+      background-color: transparent;
+
+      /*讓tr變成區塊主要讓他有個區塊*/
+      tr {
+        width: 100%;
+        display: block;
+        font-size: 15px;
+        line-height: 15px;
+        box-shadow: 2px 2px 5px #ccc;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: none !important;
+        padding: 10px !important;
+
+        &:nth-child(odd) {
+          border-left: 10px solid $text;
+          border-radius: 20px;
+
+        }
+
+        &:nth-child(even) {
+          border-left: 10px solid $yellow;
+          border-radius: 20px;
+          background-color: rgb(237, 237, 237);
+        }
+
+        .status {
+          &:before {
+            display: none;
+          }
+        }
+
+        th,td {
+          text-align: start !important;
+          overflow: hidden;
+          width: 100%;
+          display: block;
+          border: none !important;
+
+          &:before {
+            /*最重要的就是這串*/
+            content: attr(data-th) " : ";
+            /*最重要的就是這串*/
+            display: inline-block;
+            text-transform: uppercase;
+            width: 20%;
+            font-weight: 400;
+            margin-right: 10px;
+            text-align: start !important;
+            color: $primary;
+          }
+
+          input.form-control {
+            width: 90%;
+          }
+
+          select.form-select {
+            width: 90%;
+          }
+        }
+      }
+    }
+
+    tfoot {
+      /*讓tr變成區塊主要讓他有個區塊*/
+        tr {
+          width: 100%;
+          display: block;
+          font-size: 15px;
+          line-height: 15px;
+          box-shadow: 2px 2px 5px #ccc;
+          margin-top: 20px;
+          border-radius: 10px;
+          border: none !important;
+          padding: 10px !important;
+      
+          &:nth-child(odd) {
+            border-left: 10px solid $text;
+            border-radius: 20px;
+      
+          }
+      
+          &:nth-child(even) {
+            border-left: 10px solid $yellow;
+            border-radius: 20px;
+            background-color: rgb(237, 237, 237);
+          }
+      
+          .status {
+            &:before {
+              display: none;
+            }
+          }
+      
+          th,
+          td {
+            text-align: start !important;
+            overflow: hidden;
+            width: 100%;
+            display: block;
+            border: none !important;
+      
+            &:before {
+              /*最重要的就是這串*/
+              content: attr(data-th) " : ";
+              /*最重要的就是這串*/
+              display: inline-block;
+              text-transform: uppercase;
+              width: 20%;
+              font-weight: 400;
+              margin-right: 10px;
+              text-align: start !important;
+              color: $primary;
+            }
+      
+            input.form-control {
+              width: 90%;
+            }
+      
+            select.form-select {
+              width: 90%;
+            }
+          }
+        }
+    }
+  }
+}
+// DataTable Card樣式 End //

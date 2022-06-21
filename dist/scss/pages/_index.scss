@@ -1,0 +1,16 @@
+.invoiceFooter{
+  tr:first-child{
+    td,th{
+      border: none;
+    }
+  }
+  tbody{
+    th,td{
+      text-align: end;
+    }
+  }
+}
+.invoiceContent{
+  border-top: 2px double #000 ;
+  border-bottom: 2px double #000 ;
+}

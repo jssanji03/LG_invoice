@@ -1,0 +1,51 @@
+.loginPage2 {
+    height: 100vh;
+
+    .loginBg {
+        height: 100vh;
+        background-color: #ffffff;
+        padding: 0px;
+
+        .loginPic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .loginPage {
+        background-color: transparent;
+        width: 400px;
+        margin: 0px auto;
+        margin-top: 150px;
+        .loginTitle{
+            line-height: 100px;
+            color: $primary;
+            text-align: center;
+            font-family: "Oswald", sans-serif;
+        }
+        .password_input {
+            position: relative;
+        }
+
+        .showpassword {
+            position: absolute;
+            right: 5%;
+            top: 35%;
+            opacity: .3;
+        }
+
+        .loginButton {
+            margin-top: 0px;
+
+            .btn-login {
+                border-radius: 20px;
+                width: 100%;
+                height: 40px;
+                margin-top: 10px;
+                background-color: #2692CF;
+                color: #FFF
+            }
+        }
+    }
+}

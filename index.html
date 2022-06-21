@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invoice</title>
+
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../dist/scss/style.css">
+
+</head>
+
+<body class="hold-transition sidebar-mini sidebar-collapse">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light justify-content-between">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./login.html" role="button">
+            Login
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-link">
+        <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light">AdminLTE 3</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- <li class="nav-header">EXAMPLES</li> -->
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link active">
+                <i class="nav-icon far fa-circle"></i>
+                <p>
+                  invoice
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="./index.html" class="nav-link active">
+                    <i class="fas fa-user-alt nav-icon"></i>
+                    <p>PHd invoice</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>Invoice</h1>
+            </div>
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Invoice</li>
+              </ol>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+    
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+    
+    
+              <!-- Main content -->
+              <div class="invoice p-3 mb-3">
+                <!-- title row -->
+                <div class="row">
+                  <div class="col-12">
+                    <h4>
+                      <img style="width:100px ;" src="./dist/img/PHD-Media-Logo.png">
+                      <small class="float-right">Date: 2022/06/21</small>
+                    </h4>
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- info row -->
+                <div class="row">
+                  <div class="col-md-6 col-12 invoice-col">
+                    <dl class="row">
+                      <dt class="col-6 col-sm-3 text-end">Company:</dt>
+                      <dd class="col-6 col-sm-9">台灣樂金電器股份有限公司.</dd>
+                      <dt class="col-6 col-sm-3 text-end"></dt>
+                      <dd class="col-6 col-sm-9">LG Electronics Taiwan Taipei Co., Ltd</dd>
+                      <dt class="col-6 col-sm-3 text-end">Address:</dt>
+                      <dd class="col-6 col-sm-9">臺北市內湖區基湖路3巷47號6樓</dd>
+                      <dt class="col-6 col-sm-3 text-end">Vendor Code:</dt>
+                      <dd class="col-6 col-sm-9">456456465</dd>
+                      <dt class="col-6 col-sm-3 text-end">Attention:</dt>
+                      <dd class="col-6 col-sm-4">
+                        <select class="form-select form-select-sm select2">
+                          <option selected></option>
+                          <option>Open</option>
+                          <option>Close</option>
+                        </select>
+                      </dd>
+                    
+                    </dl>
+                  </div>
+                  <div class="col-md-6 col-12 invoice-col">
+                    <dl class="row">
+                      <dt class="col-6 col-sm-6 text-end">GUI No & Amount.:</dt>
+                      <dd class="col-3 col-sm-4">AM31954794</dd>
+                      <dd class="col-3 col-sm-2">714,099</dd>
+                      <dt class="col-6 col-sm-6 text-end">Credit Note No & Amount.:</dt>
+                      <dd class="col-3 col-sm-4">AM31954794</dd>
+                      <dd class="col-3 col-sm-2">32,864</dd>
+                      <dt class="col-6 col-sm-6 text-end">Invoice Date:</dt>
+                      <dd class="col-6 col-sm-4">
+                        <input type="date" class="form-control form-control-sm">
+                      </dd>
+                      <dt class="col-6 col-sm-6 text-end">Payment Term:</dt>
+                      <dd class="col-6 col-sm-4">90 Days</dd>
+                      <dt class="col-6 col-sm-6 text-end">PAPMS/PO:</dt>
+                      <dd class="col-6 col-sm-4">
+                        <input type="text" class="form-control form-control-sm">
+                      </dd>
+                      <dt class="col-6 col-sm-6 text-end">Hyperion:</dt>
+                      <dd class="col-6 col-sm-4">5twTAIWNcon</dd>
+                    </dl>
+                  </div>
+                  
+                </div>
+                <!-- /.row -->
+    
+                <!-- Table row -->
+                <div class="row mt-2 invoiceBody">
+                  <div class="col-12 table-responsive">
+                    <table class="table datatable-RWDcard">
+                      <thead>
+                        <tr class="tr-only-hide">
+                          <th>Product:</th>
+                          <th nowrap>Lux</th>
+                          <th>AMOUNT</th>
+                          <th>AC %</th>
+                          <th>AC</th>
+                          <th>Rebate %</th>
+                          <th>Rebate</th>
+                          <th>EPD %</th>
+                          <th>EPD</th>
+                          <th>Advanced</th>
+                          <th>Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th data-th="Product">Campaign:</th>
+                          <td data-th="Lux" class="text-start" nowrap>LG_2022_Q1_Mar-Apr_VCC Campaign</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th data-th="Product">Items:</th>
+                          <td data-th="Lux" class="text-start">Internet - Facebook - 3月媒體宣傳</td>
+                          <td data-th="AMOUNT">99,998</td>
+                          <td data-th="AC %">5.9%</td>
+                          <td data-th="AC">5,900</td>
+                          <td data-th="Rebate %"></td>
+                          <td data-th="Rebate">0</td>
+                          <td data-th="EPD %">2%</td>
+                          <td data-th="EPD" class="text-danger">(2,000)</td>
+                          <td data-th="Advanced"></td>
+                          <td data-th="Total">103,898</td>
+                        </tr>
+                        <tr>
+                          <th></th>
+                          <td data-th="Lux" class="text-start">Internet - YouTube</td>
+                          <td data-th="AMOUNT">199,687</td>
+                          <td data-th="AC %">7.00%</td>
+                          <td data-th="AC">13,978</td>
+                          <td data-th="Rebate %"></td>
+                          <td data-th="Rebate">0</td>
+                          <td data-th="EPD %">2%</td>
+                          <td data-th="EPD" class="text-danger">(3,994)</td>
+                          <td data-th="Advanced"></td>
+                          <td data-th="Total">209,671</td>
+                        </tr>
+                        <tr>
+                          <th></th>
+                          <td data-th="Lux" class="text-start">Internet - 追劇行銷 - 愛奇藝</td>
+                          <td data-th="AMOUNT">150,000</td>
+                          <td data-th="AC %">3.90%</td>
+                          <td data-th="AC">5,850</td>
+                          <td data-th="Rebate %">2.5%</td>
+                          <td data-th="Rebate" class="text-danger">(3,750)</td>
+                          <td data-th="EPD %">2%</td>
+                          <td data-th="EPD" class="text-danger">(2,925)</td>
+                          <td data-th="Advanced"></td>
+                          <td data-th="Total">149,175</td>
+                        </tr>
+                        <tr>
+                          <th></th>
+                          <td data-th="Lux" class="text-start">Internet - Google</td>
+                          <td data-th="AMOUNT">88,651</td>
+                          <td data-th="AC %">5.90%</td>
+                          <td data-th="AC">5,230</td>
+                          <td data-th="Rebate %"></td>
+                          <td data-th="Rebate">0</td>
+                          <td data-th="EPD %">2%</td>
+                          <td data-th="EPD" class="text-danger">(1,773)</td>
+                          <td data-th="Advanced"></td>
+                          <td data-th="Total">92,108</td>
+                        </tr>
+                        <tr>
+                          <th></th>
+                          <td data-th="Lux" class="text-start">Internet - 馬謝瑾萱 Pd</td>
+                          <td data-th="AMOUNT">8,000</td>
+                          <td data-th="AC %">10.00%</td>
+                          <td data-th="AC">800</td>
+                          <td data-th="Rebate %"></td>
+                          <td data-th="Rebate">0</td>
+                          <td data-th="EPD %">2%</td>
+                          <td data-th="EPD" class="text-danger">(160)</td>
+                          <td data-th="Advanced"></td>
+                          <td data-th="Total">8,640</td>
+                        </tr>
+                        <tr>
+                          <th></th>
+                          <td data-th="Lux" class="text-start">Omnet - VL</td>
+                          <td data-th="AMOUNT">100,000</td>
+                          <td data-th="AC %">2.00%</td>
+                          <td data-th="AC">2,000</td>
+                          <td data-th="Rebate %">15.0%</td>
+                          <td data-th="Rebate" class="text-danger">(15,000)</td>
+                          <td data-th="EPD %" data-th="Rebate">2%</td>
+                          <td data-th="EPD" class="text-danger">(1,700)</td>
+                          <td data-th="Advanced"></td>
+                          <td data-th="Total">85,300</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th></th>
+                          <th data-th="Sub-Total" class="text-start">Sub-Total</th>
+                          <th data-th="AMOUNT">646,336</th>
+                          <th data-th="AC %"></th>
+                          <th data-th="AC">33,758</th>
+                          <th data-th="Rebate %"></th>
+                          <th data-th="Rebate" class="text-danger">(18,750)</th>
+                          <th data-th="EPD %"></th>
+                          <th data-th="EPD" class="text-danger">(12,552)</th>
+                          <th data-th="Advanced">0</th>
+                          <th data-th="Total">648,792</th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+    
+                <div class="row mt-3 invoiceFooter">
+                  <!-- accepted payments column -->
+                  <div class="col-lg-6 col-12">
+                    <label for="MemoTitle" class="form-label">Memo:</label>
+                    <textarea class="form-control" id="MemoTitle" rows="5"></textarea>
+                  </div>
+                  <!-- /.col -->
+                  <div class="col-lg-6 col-12">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <tr>
+                          <th></th>
+                          <th style="width:40%">VAT 5%:</td>
+                          <td>$32,440</td>
+                        </tr>
+                        <tr>
+                          <th></th>
+                          <th>Net Billing Amount in TWD:</th>
+                          <td>$681,232</td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <div class="form-check form-check-inline d-inline-flex">
+                              <input class="form-check-input" type="checkbox" id="Checkbox3" value="option2">
+                              <label class="form-check-label d-flex align-items-center" for="Checkbox3"> 外幣
+                               </label>
+                            </div>
+                          </th>
+                          <th>Convert to:</th>
+                          <td class="d-flex justify-content-end">
+                            <select class="form-select form-select-sm select2">
+                              <option selected></option>
+                              <option>USD</option>
+                              <option>NT</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th></th>
+                          <th>Convert Rate:</th>
+                          <td>$265.24</td>
+                        </tr>
+                        <tr>
+                          <th></th>
+                          <th>Net Billing Amount in USD:</th>
+                          <td>$22,707.73</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+                <div class="row mt-3 invoiceContent py-3">
+                  <div class="col-12">
+                    PLEASE REMIT YOUR PAYMENT TO :<br>
+                    BANK NAME : Citibank Taiwan Limited, Taiwan Business Department花旗(台灣)商業銀行營業部<br>
+                    BANK ADDS : No.1,Songjhih Road,Hsinyi Dist.,Taipei,Taiwan,R.O.C.<br>
+                    ACCOUNT NAME : PHD Network Taiwan Limited 奇宏策略媒體有限公司<br>
+                    ACCOUNT NO : 5029542009 (NTD)<br>
+                    ACCOUNT NO : 5029542203 (USD)<br>
+                  </div>
+                </div>
+    
+                <!-- this row will not appear when printing -->
+                <div class="row no-print mt-3">
+                  <div class="col-12">
+                    <a href="invoice-print.html" rel="noopener" target="_blank" class="btn btn-primary float-right"><i
+                        class="fas fa-print"></i> Print</a>
+                    <button type="button" class="btn btn-secondary float-right" style="margin-right: 5px;">
+                      <i class="fas fa-download"></i> PDF
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- /.invoice -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <div class="float-right d-none d-sm-block">
+        <b>Version</b> 3.2.0
+      </div>
+      <strong>Copyright &copy; 2014-2021 <a>AdminLTE.io</a>.</strong> All rights reserved.
+    </footer>
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 5 -->
+  <script src="../custom_plugin/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- DataTables  & Plugins -->
+  <script src="../plugins/datatables/jquery.dataTables.js"></script>
+  <script src="../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+  <script src="../plugins/jszip/jszip.min.js"></script>
+  <script src="../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+  <script src="../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+  <!-- Select2 -->
+  <script src="../plugins/select2/js/select2.full.min.js"></script>
+
+  <!-- AdminLTE App -->
+  <script src="../dist/js/adminlte.min.js"></script>
+  <!-- custom -->
+  <script src="../dist/js/component.js"></script>
+  <script src="../dist/js/todo.js"></script>
+  <!-- Page specific script -->
+</body>
+
+
+</html>
