@@ -53,6 +53,9 @@ table.dataTable{
 
 // DataTable Card樣式 Start //
 .datatable-RWDcard {
+  .form-control-sm,.input-group{
+    min-width: 130px;
+  }
   @media (max-width: 992px) {
     border: none !important;
     // background-color: transparent !important;

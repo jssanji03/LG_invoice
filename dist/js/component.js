@@ -47,11 +47,10 @@ $(function () {
       },
         "columnDefs": [
                         { "width": "20%", "targets": 2 },
-                        { "width": "8%", "targets": [4,6,8]}
-                    ]
-        // "initComplete": function (settings, json) {
-        //     $(".datatable-RWDcard").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
-        // },
+                    ],
+        "initComplete": function (settings, json) {
+            $(".datatable-RWDcard").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
+        },
     }
   );
 

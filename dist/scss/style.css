@@ -12215,6 +12215,10 @@ table.dataTable tfoot th {
   text-align: end;
 }
 
+.datatable-RWDcard .form-control-sm, .datatable-RWDcard .input-group {
+  min-width: 130px;
+}
+
 @media (max-width: 992px) {
   .datatable-RWDcard {
     border: none !important;

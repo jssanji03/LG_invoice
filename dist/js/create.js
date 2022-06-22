@@ -1,10 +1,15 @@
 const addFormToList = document.querySelectorAll(".js-addList-Btn")
+const deleteList = document.querySelector(".js-delete-Btn")
 const tableArea = document.querySelector(".js-itemArea")
 const amount = document.querySelectorAll(".js-amount")
 addFormToList.forEach((item) => {
   item.addEventListener("click", addTemplate)
 })
 
+
+$('.datatable-RWDcard tbody').on('click', '.js-delete-Btn', function () {
+  $(this).parents('tr').remove()
+} );
 function addTemplate(e) {
   e.preventDefault()
   let addTr = e.target.getAttribute("data-area")
@@ -13,6 +18,7 @@ function addTemplate(e) {
         let str = `
         <tr>
           <th>
+          <button class="btn btn-sm btn-danger js-delete-Btn" href=""><i class="fas fa-trash-alt"></i></button>
           </th>
           <th></th>
           <td data-th="Lux" class="text-start">
@@ -58,15 +64,22 @@ function addTemplate(e) {
         `
       trAdd.innerHTML = str;
   }
+  // $(".js-delete-Btn").on("click", (e) => {
+  //   e.preventDefault()
+  //   if (confirm("確定刪除嗎?")) {
+  //           e.target.parentNode.parentNode.remove()
+  //       }
+  // })
   const rowsCountLength = tableArea.rows.length;
   const rowsCount = tableArea.rows;
   for (let i = 0; i < rowsCountLength; i++){
     const amountCells = tableArea.rows[i].cells[3]
     const amount = amountCells.children[0];
     
-    console.log(amount);
+    // console.log(amount);
   }
 }
+
 
 function setAmountSum(x) {
   const AmountSum = amount.values
