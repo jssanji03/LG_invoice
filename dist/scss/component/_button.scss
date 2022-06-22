@@ -23,7 +23,8 @@
     @include button($background-color:rgb(40, 40, 40),$fontColor: #fff,$hover-color:orangered,$hover-fontColor:#fff)
 }
 .jess-btn-add{
-    @include button($background-color: $primary, $fontColor: #fff, $hover-color:lighten($primary, 30%) , $hover-fontColor: #fff)
+    @include button($background-color: $primary, $fontColor: #fff, $hover-color:lighten($primary, 30%) , $hover-fontColor: #fff);
+    line-height:10px
 }
 
 .btn-more {

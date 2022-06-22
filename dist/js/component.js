@@ -34,8 +34,9 @@ $(function () {
       "searching": false,
       "paging": false,
       "info": false,
+      // "scrollX": true,
       "ordering": false,
-        "language": {
+      "language": {
             "info": "顯示 _PAGE_ 至 _PAGES_",
             "search": "搜尋 :",
             "paginate": {
@@ -43,11 +44,14 @@ $(function () {
                 "next":"下一頁"
             },
             "lengthMenu": "顯示 _MENU_ 筆資料"
-          },
-        
-        "initComplete": function (settings, json) {
-            $(".datatable-RWDcard").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
-        },
+      },
+        "columnDefs": [
+                        { "width": "20%", "targets": 2 },
+                        { "width": "8%", "targets": [4,6,8]}
+                    ]
+        // "initComplete": function (settings, json) {
+        //     $(".datatable-RWDcard").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
+        // },
     }
   );
 

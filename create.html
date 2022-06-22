@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Invoice</title>
+  <title>Invoice Create</title>
 
 
   <!-- Theme style -->
@@ -30,7 +30,6 @@
             Login
           </a>
         </li>
-
       </ul>
     </nav>
     <!-- /.navbar -->
@@ -61,13 +60,13 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="./index.html" class="nav-link active">
+                  <a href="./index.html" class="nav-link "
                     <i class="fas fa-user-alt nav-icon"></i>
                     <p>PHd invoice</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="./create.html" class="nav-link">
+                  <a href="./create.html" class="nav-link active">
                     <i class="fas fa-user-alt nav-icon"></i>
                     <p>Create invoice</p>
                   </a>
@@ -88,7 +87,7 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Invoice</h1>
+              <h1>Invoice Create</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
@@ -169,27 +168,31 @@
     
                 <!-- Table row -->
                 <div class="row mt-2 invoiceBody">
-                  <div class="col-12 table-responsive">
-                    <table class="table datatable-RWDcard">
+                  <div class="col-12">
+                    <table class="table datatable-RWDcard " width="100%">
                       <thead>
                         <tr class="tr-only-hide">
+                          <th></th>
                           <th>Product:</th>
-                          <th nowrap>Lux</th>
+                          <th style="width: 15%;" nowrap>Lux</th>
                           <th>AMOUNT</th>
-                          <th>AC %</th>
+                          <th style="width: 10%;" nowrap>AC %</th>
                           <th>AC</th>
-                          <th>Rebate %</th>
+                          <th style="width: 10%;" nowrap>Rebate %</th>
                           <th>Rebate</th>
-                          <th>EPD %</th>
+                          <th style="width: 10%;" nowrap>EPD %</th>
                           <th>EPD</th>
                           <th>Advanced</th>
                           <th>Total</th>
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody class="js-itemArea">
                         <tr>
+                          <th></th>
                           <th data-th="Product">Campaign:</th>
-                          <td data-th="Lux" class="text-start" nowrap>LG_2022_Q1_Mar-Apr_VCC Campaign</td>
+                          <td data-th="Lux" class="text-start" nowrap>
+                            <input type="text" class="form-control form-control-sm">
+                          </td>
                           <td></td>
                           <td></td>
                           <td></td>
@@ -201,86 +204,54 @@
                           <td></td>
                         </tr>
                         <tr>
+                          <th>
+                            <input type="button" class="btn jess-btn-add js-addList-Btn" data-area="itemArea" value="+">
+                          </th>
                           <th data-th="Product">Items:</th>
-                          <td data-th="Lux" class="text-start">Internet - Facebook - 3月媒體宣傳</td>
-                          <td data-th="AMOUNT">99,998</td>
-                          <td data-th="AC %">5.9%</td>
-                          <td data-th="AC">5,900</td>
-                          <td data-th="Rebate %"></td>
-                          <td data-th="Rebate">0</td>
-                          <td data-th="EPD %">2%</td>
-                          <td data-th="EPD" class="text-danger">(2,000)</td>
-                          <td data-th="Advanced"></td>
-                          <td data-th="Total">103,898</td>
-                        </tr>
-                        <tr>
-                          <th></th>
-                          <td data-th="Lux" class="text-start">Internet - YouTube</td>
-                          <td data-th="AMOUNT">199,687</td>
-                          <td data-th="AC %">7.00%</td>
-                          <td data-th="AC">13,978</td>
-                          <td data-th="Rebate %"></td>
-                          <td data-th="Rebate">0</td>
-                          <td data-th="EPD %">2%</td>
-                          <td data-th="EPD" class="text-danger">(3,994)</td>
-                          <td data-th="Advanced"></td>
-                          <td data-th="Total">209,671</td>
-                        </tr>
-                        <tr>
-                          <th></th>
-                          <td data-th="Lux" class="text-start">Internet - 追劇行銷 - 愛奇藝</td>
-                          <td data-th="AMOUNT">150,000</td>
-                          <td data-th="AC %">3.90%</td>
-                          <td data-th="AC">5,850</td>
-                          <td data-th="Rebate %">2.5%</td>
-                          <td data-th="Rebate" class="text-danger">(3,750)</td>
-                          <td data-th="EPD %">2%</td>
-                          <td data-th="EPD" class="text-danger">(2,925)</td>
-                          <td data-th="Advanced"></td>
-                          <td data-th="Total">149,175</td>
-                        </tr>
-                        <tr>
-                          <th></th>
-                          <td data-th="Lux" class="text-start">Internet - Google</td>
-                          <td data-th="AMOUNT">88,651</td>
-                          <td data-th="AC %">5.90%</td>
-                          <td data-th="AC">5,230</td>
-                          <td data-th="Rebate %"></td>
-                          <td data-th="Rebate">0</td>
-                          <td data-th="EPD %">2%</td>
-                          <td data-th="EPD" class="text-danger">(1,773)</td>
-                          <td data-th="Advanced"></td>
-                          <td data-th="Total">92,108</td>
-                        </tr>
-                        <tr>
-                          <th></th>
-                          <td data-th="Lux" class="text-start">Internet - 馬謝瑾萱 Pd</td>
-                          <td data-th="AMOUNT">8,000</td>
-                          <td data-th="AC %">10.00%</td>
-                          <td data-th="AC">800</td>
-                          <td data-th="Rebate %"></td>
-                          <td data-th="Rebate">0</td>
-                          <td data-th="EPD %">2%</td>
-                          <td data-th="EPD" class="text-danger">(160)</td>
-                          <td data-th="Advanced"></td>
-                          <td data-th="Total">8,640</td>
-                        </tr>
-                        <tr>
-                          <th></th>
-                          <td data-th="Lux" class="text-start">Omnet - VL</td>
-                          <td data-th="AMOUNT">100,000</td>
-                          <td data-th="AC %">2.00%</td>
-                          <td data-th="AC">2,000</td>
-                          <td data-th="Rebate %">15.0%</td>
-                          <td data-th="Rebate" class="text-danger">(15,000)</td>
-                          <td data-th="EPD %" data-th="Rebate">2%</td>
-                          <td data-th="EPD" class="text-danger">(1,700)</td>
-                          <td data-th="Advanced"></td>
-                          <td data-th="Total">85,300</td>
+                          <td data-th="Lux" class="text-start">
+                            <input type="text" class="form-control form-control-sm">
+                          </td>
+                          <td data-th="AMOUNT">
+                            <input type="number" class="form-control form-control-sm js-amount" value="">
+                          </td>
+                          <td data-th="AC %">
+                            <div class="input-group input-group-sm flex-nowrap">
+                              <input type="number" class="form-control">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="AC">
+                            <input type="number" class="form-control form-control-sm js-ac">
+                          </td>
+                          <td data-th="Rebate %">
+                            <div class="input-group input-group-sm flex-nowrap">
+                              <input type="number" class="form-control">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="Rebate">
+                            <input type="number" class="form-control form-control-sm">
+                          </td>
+                          <td data-th="EPD %">
+                            <div class="input-group input-group-sm flex-nowrap">
+                              <input type="number" class="form-control">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="EPD" class="text-danger">
+                            <input type="number" class="form-control form-control-sm">
+                          </td>
+                          <td data-th="Advanced">
+                            <input type="number" class="form-control form-control-sm">
+                          </td>
+                          <td data-th="Total">
+                            <input type="number" class="form-control form-control-sm">
+                          </td>
                         </tr>
                       </tbody>
                       <tfoot>
                         <tr>
+                          <th></th>
                           <th></th>
                           <th data-th="Sub-Total" class="text-start">Sub-Total</th>
                           <th data-th="AMOUNT">646,336</th>
@@ -417,6 +388,7 @@
   <script src="./dist/js/adminlte.min.js"></script>
   <!-- custom -->
   <script src="./dist/js/component.js"></script>
+  <script src="./dist/js/create.js"></script>
   <!-- Page specific script -->
 </body>
 

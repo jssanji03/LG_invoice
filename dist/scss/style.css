@@ -12327,6 +12327,135 @@ table.dataTable tfoot th {
   }
 }
 
+.jess-btn-submit {
+  height: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+  margin: 0px 5px;
+  background-color: #282828;
+  color: #fff;
+}
+
+.jess-btn-submit:hover {
+  background-color: orangered;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.jess-btn-submit:focus {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.jess-btn-add {
+  height: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+  margin: 0px 5px;
+  background-color: #325eaf;
+  color: #fff;
+  line-height: 10px;
+}
+
+.jess-btn-add:hover {
+  background-color: #98b2e2;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.jess-btn-add:focus {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn-more {
+  padding: 10px 30px;
+  background-color: #5a5a5a;
+  color: #ffffff;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  border-radius: 8px;
+}
+
+.btn-more:hover {
+  background-color: #ffffff;
+  border: 1px solid #5a5a5a;
+  color: #5a5a5a;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(197, 197, 197, 0.5);
+          box-shadow: 0px 3px 8px 0px rgba(197, 197, 197, 0.5);
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.btn-more:focus {
+  background-color: #ffffff;
+  border: 1px solid #5a5a5a;
+  color: #5a5a5a;
+}
+
+.btn-menu {
+  width: 100%;
+  height: 55px;
+  background-color: #F3F3F3;
+  border-radius: 8px;
+  line-height: 20px;
+  color: #5a5a5a;
+  font-size: 16px;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  word-break: normal;
+  word-wrap: normal;
+  text-align: left;
+}
+
+.btn-menu .fas {
+  text-align: right;
+  padding-right: 0px;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.btn-menu:hover {
+  padding-left: 20px;
+}
+
+.btn-menu:hover {
+  color: #ffffff;
+  background-color: #325eaf;
+}
+
+.btn-menu:hover .fas {
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.button-footer {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 10px;
+}
+
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
