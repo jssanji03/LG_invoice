@@ -74,7 +74,7 @@ $(function () {
             "lengthMenu": "顯示 _MENU_ 筆資料"
       },
         "initComplete": function (settings, json) {
-            $(".datatable-RWDcard").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
+            $(".datatable-invoice").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
         },
     }
   );
