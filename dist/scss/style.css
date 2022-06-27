@@ -12204,6 +12204,7 @@ table.dataTable tbody tr td {
   padding: 8px;
   white-space: nowrap;
   text-align: end;
+  height: 20px;
 }
 
 table.dataTable tbody tr:nth-child(odd) {
@@ -12329,6 +12330,16 @@ table.dataTable tfoot th {
     text-align: start !important;
     color: #325eaf;
   }
+}
+
+.Soe-tableFooter tr {
+  border: none !important;
+}
+
+.Soe-tableFooter th {
+  border-bottom: none !important;
+  border-top: none !important;
+  background-color: #fff;
 }
 
 .jess-btn-submit {
