@@ -61,7 +61,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="./index.html" class="nav-link active">
+                  <a href="./index.html" class="nav-link ">
                     <i class="fas fa-user-alt nav-icon"></i>
                     <p>PHd invoice</p>
                   </a>
@@ -73,13 +73,13 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="./invoice.html" class="nav-link ">
+                  <a href="./invoice.html" class="nav-link">
                     <i class="fas fa-user-alt nav-icon"></i>
                     <p>invoice</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="./amount.html" class="nav-link ">
+                  <a href="./amount.html" class="nav-link active">
                     <i class="fas fa-user-alt nav-icon"></i>
                     <p>Amount&AC</p>
                   </a>
@@ -100,26 +100,25 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Invoice</h1>
+              <h1>Amount&AC</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Invoice</li>
+                <li class="breadcrumb-item active">Amount&AC</li>
               </ol>
             </div>
           </div>
         </div><!-- /.container-fluid -->
       </section>
-    
-      <section class="content">
+
+      <section class="content" id="printIt">
         <div class="container-fluid">
           <div class="row">
             <div class="col-12">
-    
-    
+
               <!-- Main content -->
-              <div class="invoice p-3 mb-3">
+              <div class="invoice p-3 mb-3" id="print_parts">
                 <!-- title row -->
                 <div class="row">
                   <div class="col-12">
@@ -143,14 +142,8 @@
                       <dt class="col-6 col-md-3 text-end">Vendor Code:</dt>
                       <dd class="col-6 col-md-9">456456465</dd>
                       <dt class="col-6 col-md-3 text-end">Attention:</dt>
-                      <dd class="col-6 col-md-4">
-                        <select class="form-select form-select-sm select2">
-                          <option selected></option>
-                          <option>Open</option>
-                          <option>Close</option>
-                        </select>
-                      </dd>
-                    
+                      <dd class="col-6 col-md-4">Vicky Kuo</dd>
+
                     </dl>
                   </div>
                   <div class="col-md-6 col-12 invoice-col">
@@ -158,54 +151,37 @@
                       <dt class="col-6 col-md-6 text-end">GUI No & Amount.:</dt>
                       <dd class="col-3 col-md-4">AM31954794</dd>
                       <dd class="col-3 col-md-2">714,099</dd>
-                      <dt class="col-6 col-md-6 text-end">Credit Note No & Amount.:</dt>
-                      <dd class="col-3 col-md-4">AM31954794</dd>
-                      <dd class="col-3 col-md-2">32,864</dd>
                       <dt class="col-6 col-md-6 text-end">Invoice Date:</dt>
-                      <dd class="col-6 col-md-4">
-                        <input type="date" class="form-control form-control-sm">
-                      </dd>
+                      <dd class="col-6 col-md-4">2022/04/25</dd>
                       <dt class="col-6 col-md-6 text-end">Payment Term:</dt>
                       <dd class="col-6 col-md-4">90 Days</dd>
-                      <dt class="col-6 col-md-6 text-end">PAPMS/PO:</dt>
-                      <dd class="col-6 col-md-4">
-                        <input type="text" class="form-control form-control-sm">
-                      </dd>
+                      <dt class="col-6 col-md-6 text-end">APMS/PO:</dt>
+                      <dd class="col-6 col-md-4">EATT-ACT-20211101-0066</dd>
                       <dt class="col-6 col-smd-6 text-end">Hyperion:</dt>
                       <dd class="col-6 col-smd-4">5twTAIWNcon</dd>
                     </dl>
                   </div>
-                  
+
                 </div>
                 <!-- /.row -->
-    
+
                 <!-- Table row -->
                 <div class="row mt-2 invoiceBody">
                   <div class="col-12 table-responsive">
-                    <table class="table datatable-RWDcard">
+                    <table class="table js-datatable-List ">
                       <thead>
                         <tr class="tr-only-hide">
-                          <th>
-                            <button type="button" class="btn btn-info float-right" style="margin-right: 5px;" data-bs-toggle="modal" data-bs-target="#checkList">
-                              <i class="far fa-check-circle text-white"></i>
-                            </button>
-                          </th>
                           <th>Product:</th>
                           <th nowrap>Lux</th>
                           <th>AMOUNT</th>
                           <th>AC %</th>
                           <th>AC</th>
-                          <th>Rebate %</th>
-                          <th>Rebate</th>
-                          <th>EPD %</th>
-                          <th>EPD</th>
                           <th>Advanced</th>
                           <th>Total</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <th></th>
                           <th data-th="Product">Campaign:</th>
                           <td data-th="Lux" class="text-start" nowrap>LG_2022_Q1_Mar-Apr_VCC Campaign</td>
                           <td></td>
@@ -213,116 +189,58 @@
                           <td></td>
                           <td></td>
                           <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
                         </tr>
                         <tr>
-                          <th>
-                            <div class="form-check form-check-inline d-inline-flex mx-auto">
-                              <input class="form-check-input" type="checkbox" id="Checkbox3" value="option2">
-                            </div>
-                          </th>
                           <th data-th="Product">Items:</th>
                           <td data-th="Lux" class="text-start">Internet - Facebook - 3月媒體宣傳</td>
-                          <td data-th="AMOUNT">99,998</td>
+                          <td data-th="AMOUNT" class="js-subtotal">99998</td>
                           <td data-th="AC %">5.9%</td>
-                          <td data-th="AC">5,900</td>
-                          <td data-th="Rebate %"></td>
-                          <td data-th="Rebate">0</td>
-                          <td data-th="EPD %">2%</td>
-                          <td data-th="EPD" class="text-danger">(2,000)</td>
+                          <td data-th="AC" class="js-subtotal">5900</td>
                           <td data-th="Advanced"></td>
-                          <td data-th="Total">103,898</td>
+                          <td data-th="Total" class="js-total">105,898</td>
                         </tr>
                         <tr>
-                          <th>
-                            <div class="form-check form-check-inline d-inline-flex mx-auto mx-auto">
-                              <input class="form-check-input" type="checkbox" id="Checkbox3" value="option2">
-                            </div>
-                          </th>
                           <th></th>
                           <td data-th="Lux" class="text-start">Internet - YouTube</td>
                           <td data-th="AMOUNT">199,687</td>
                           <td data-th="AC %">7.00%</td>
                           <td data-th="AC">13,978</td>
-                          <td data-th="Rebate %"></td>
-                          <td data-th="Rebate">0</td>
-                          <td data-th="EPD %">2%</td>
-                          <td data-th="EPD" class="text-danger">(3,994)</td>
                           <td data-th="Advanced"></td>
-                          <td data-th="Total">209,671</td>
+                          <td data-th="Total" class="js-total">213,665</td>
                         </tr>
                         <tr>
-                          <th>
-                            <div class="form-check form-check-inline d-inline-flex mx-auto">
-                              <input class="form-check-input" type="checkbox" id="Checkbox3" value="option2">
-                            </div>
-                          </th>
                           <th></th>
                           <td data-th="Lux" class="text-start">Internet - 追劇行銷 - 愛奇藝</td>
                           <td data-th="AMOUNT">150,000</td>
                           <td data-th="AC %">3.90%</td>
                           <td data-th="AC">5,850</td>
-                          <td data-th="Rebate %">2.5%</td>
-                          <td data-th="Rebate" class="text-danger">(3,750)</td>
-                          <td data-th="EPD %">2%</td>
-                          <td data-th="EPD" class="text-danger">(2,925)</td>
                           <td data-th="Advanced"></td>
-                          <td data-th="Total">149,175</td>
+                          <td data-th="Total">155,850</td>
                         </tr>
                         <tr>
-                          <th>
-                            <div class="form-check form-check-inline d-inline-flex mx-auto">
-                              <input class="form-check-input" type="checkbox" id="Checkbox3" value="option2">
-                            </div>
-                          </th>
                           <th></th>
                           <td data-th="Lux" class="text-start">Internet - Google</td>
                           <td data-th="AMOUNT">88,651</td>
                           <td data-th="AC %">5.90%</td>
                           <td data-th="AC">5,230</td>
-                          <td data-th="Rebate %"></td>
-                          <td data-th="Rebate">0</td>
-                          <td data-th="EPD %">2%</td>
-                          <td data-th="EPD" class="text-danger">(1,773)</td>
                           <td data-th="Advanced"></td>
-                          <td data-th="Total">92,108</td>
+                          <td data-th="Total">93,881</td>
                         </tr>
                         <tr>
-                          <th>
-                            <div class="form-check form-check-inline d-inline-flex mx-auto">
-                              <input class="form-check-input" type="checkbox" id="Checkbox3" value="option2">
-                            </div>
-                          </th>
                           <th></th>
                           <td data-th="Lux" class="text-start">Internet - 馬謝瑾萱 Pd</td>
                           <td data-th="AMOUNT">8,000</td>
                           <td data-th="AC %">10.00%</td>
                           <td data-th="AC">800</td>
-                          <td data-th="Rebate %"></td>
-                          <td data-th="Rebate">0</td>
-                          <td data-th="EPD %">2%</td>
-                          <td data-th="EPD" class="text-danger">(160)</td>
                           <td data-th="Advanced"></td>
-                          <td data-th="Total">8,640</td>
+                          <td data-th="Total">8,800</td>
                         </tr>
                         <tr>
-                          <th>
-                            <div class="form-check form-check-inline d-inline-flex mx-auto">
-                              <input class="form-check-input" type="checkbox" id="Checkbox3" value="option2">
-                            </div>
-                          </th>
                           <th></th>
                           <td data-th="Lux" class="text-start">Omnet - VL</td>
                           <td data-th="AMOUNT">100,000</td>
                           <td data-th="AC %">2.00%</td>
                           <td data-th="AC">2,000</td>
-                          <td data-th="Rebate %">15.0%</td>
-                          <td data-th="Rebate" class="text-danger">(15,000)</td>
-                          <td data-th="EPD %" data-th="Rebate">2%</td>
-                          <td data-th="EPD" class="text-danger">(1,700)</td>
                           <td data-th="Advanced"></td>
                           <td data-th="Total">85,300</td>
                         </tr>
@@ -330,17 +248,12 @@
                       <tfoot>
                         <tr>
                           <th></th>
-                          <th></th>
                           <th data-th="Sub-Total" class="text-start">Sub-Total</th>
                           <th data-th="AMOUNT">646,336</th>
                           <th data-th="AC %"></th>
                           <th data-th="AC">33,758</th>
-                          <th data-th="Rebate %"></th>
-                          <th data-th="Rebate" class="text-danger">(18,750)</th>
-                          <th data-th="EPD %"></th>
-                          <th data-th="EPD" class="text-danger">(12,552)</th>
                           <th data-th="Advanced">0</th>
-                          <th data-th="Total">648,792</th>
+                          <th data-th="Total">680,094</th>
                         </tr>
                       </tfoot>
                     </table>
@@ -348,53 +261,36 @@
                   <!-- /.col -->
                 </div>
                 <!-- /.row -->
-    
+
                 <div class="row mt-3 invoiceFooter">
                   <!-- accepted payments column -->
-                  <div class="col-lg-6 col-12">
+                  <div class="col-lg-7 col-sm-7 col-12">
                     <label for="MemoTitle" class="form-label">Memo:</label>
                     <textarea class="form-control" id="MemoTitle" rows="5"></textarea>
                   </div>
                   <!-- /.col -->
-                  <div class="col-lg-6 col-12">
+                  <div class="col-lg-5 col-sm-5 col-12">
                     <div class="table-responsive">
                       <table class="table">
                         <tr>
-                          <th></th>
-                          <th style="width:40%">VAT 5%:</td>
-                          <td>$32,440</td>
+                          <th>VAT 5%:</td>
+                          <td>$34,005</td>
                         </tr>
                         <tr>
-                          <th></th>
-                          <th>Net Billing Amount in TWD:</th>
-                          <td>$681,232</td>
+                          <th nowrap>Net Billing Amount in TWD:</th>
+                          <td>$714,009</td>
                         </tr>
                         <tr>
-                          <th>
-                            <div class="form-check form-check-inline d-inline-flex mx-auto">
-                              <input class="form-check-input" type="checkbox" id="Checkbox3" value="option2">
-                              <label class="form-check-label d-flex align-items-center" for="Checkbox3"> 外幣
-                               </label>
-                            </div>
-                          </th>
                           <th>Convert to:</th>
-                          <td class="d-flex justify-content-end">
-                            <select class="form-select form-select-sm select2">
-                              <option selected></option>
-                              <option>USD</option>
-                              <option>NT</option>
-                            </select>
-                          </td>
+                          <td class="d-flex justify-content-end">USD</td>
                         </tr>
                         <tr>
-                          <th></th>
                           <th>Convert Rate:</th>
-                          <td>$265.24</td>
+                          <td>30</td>
                         </tr>
                         <tr>
-                          <th></th>
-                          <th>Net Billing Amount in USD:</th>
-                          <td>$22,707.73</td>
+                          <th nowrap>Net Billing Amount in USD:</th>
+                          <td>$23,803</td>
                         </tr>
                       </table>
                     </div>
@@ -405,21 +301,21 @@
                 <div class="row mt-3 invoiceContent py-3">
                   <div class="col-12">
                     <small>PLEASE REMIT YOUR PAYMENT TO :<br>
-                    BANK NAME : Citibank Taiwan Limited, Taiwan Business Department花旗(台灣)商業銀行營業部<br>
-                    BANK ADDS : No.1,Songjhih Road,Hsinyi Dist.,Taipei,Taiwan,R.O.C.<br>
-                    ACCOUNT NAME : PHD Network Taiwan Limited 奇宏策略媒體有限公司<br>
-                    ACCOUNT NO : 5029542009 (NTD)<br>
-                    ACCOUNT NO : 5029542203 (USD)<br>
-                    ACCOUNT NO : 5029542203 (USD)<br>
+                      BANK NAME : Citibank Taiwan Limited, Taiwan Business Department花旗(台灣)商業銀行營業部<br>
+                      BANK ADDS : No.1,Songjhih Road,Hsinyi Dist.,Taipei,Taiwan,R.O.C.<br>
+                      ACCOUNT NAME : PHD Network Taiwan Limited 奇宏策略媒體有限公司<br>
+                      ACCOUNT NO : 5029542009 (NTD)<br>
+                      ACCOUNT NO : 5029542203 (USD)<br>
+                      ACCOUNT NO : 5029542203 (USD)<br>
                     </small>
                   </div>
                 </div>
-    
+
                 <!-- this row will not appear when printing -->
                 <div class="row no-print mt-3">
                   <div class="col-12">
-                    <a href="invoice-print.html" rel="noopener" target="_blank" class="btn btn-primary float-right"><i
-                        class="fas fa-print"></i> Print</a>
+                    <button onClick="printOut('printIt')" rel="noopener" class="btn btn-primary float-right"><i
+                        class="fas fa-print"></i> Print</button>
                     <button type="button" class="btn btn-secondary float-right" style="margin-right: 5px;">
                       <i class="fas fa-download"></i> PDF
                     </button>
@@ -432,64 +328,6 @@
         </div><!-- /.container-fluid -->
       </section>
 
-      <!-- Modal -->
-      <section>
-        <div class="modal fade" id="checkList" tabindex="-1" >
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <table class="table datatable-RWDcard nowrap" style="width:100%">
-                  <thead>
-                    <tr class="tr-only-hide">
-                      <th></th>
-                      <th>Client Name(TW)</th>
-                      <th>Prebilling GUI No.</th>
-                      <th nowrap>Prebilling GUI Date</th>
-                      <th>Prebilling Amount</th>
-                      <th nowrap>Prebilling Balance</th>
-                      <th>Prebilling Description</th>
-                    </tr>
-                  </thead>
-                  <tbody class="js-itemArea">
-                    <tr>
-                      <td>
-                        <div class="form-check form-check-inline d-inline-flex mx-auto">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                        </div>
-                      </td>
-                      <td class="text-center">嬌生股份有限公司</td>
-                      <td class="text-center">PB55663344</td>
-                      <td class="text-center">2022/06/24</td>
-                      <td class="text-center">only (TWD)未稅</td>
-                      <td class="text-center">餘額(TWD)未稅</td>
-                      <td class="text-center">940147552</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="form-check form-check-inline d-inline-flex mx-auto">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                        </div>
-                      </td>
-                      <td class="text-center">嬌生股份有限公司</td>
-                      <td class="text-center">PV77887780</td>
-                      <td class="text-center">2022/06/28</td>
-                      <td class="text-center">only (TWD)未稅</td>
-                      <td class="text-center">餘額(TWD)未稅</td>
-                      <td class="text-center">123456778</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Save</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
@@ -525,6 +363,7 @@
   <script src="./dist/js/adminlte.min.js"></script>
   <!-- custom -->
   <script src="./dist/js/component.js"></script>
+  <script src="./dist/js/amount.js"></script>
   <!-- Page specific script -->
 </body>
 

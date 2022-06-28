@@ -5,13 +5,17 @@ $(function () {
   $('.select2').select2({
       theme: 'bootstrap4'
   })
-  $('.searchResult').DataTable({
+  $('.js-datatable-List').DataTable({
+      
       "responsive": false,
       "lengthChange": false,
       "autoWidth": false,
-    "searching": true,
-        // "scrollX": true,
-        "language": {
+      "searching": false,
+      "paging": false,
+      "info": false,
+      // "scrollX": true,
+      "ordering": false,
+      "language": {
             "info": "顯示 _PAGE_ 至 _PAGES_",
             "search": "搜尋 :",
             "paginate": {
@@ -19,11 +23,12 @@ $(function () {
                 "next":"下一頁"
             },
             "lengthMenu": "顯示 _MENU_ 筆資料"
-          },
-        dom: "<'row'<'col-xl-12'fr>>" +
-        "<'row'<'col-sm-12'tlp>>",
+      },
+        "columnDefs": [
+            { "width": "20%", "targets": 2 },
+                    ],
         "initComplete": function (settings, json) {
-            $(".searchResult").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
+            $(".datatable-RWDcard").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
         },
     }
   );

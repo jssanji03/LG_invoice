@@ -1,3 +1,8 @@
-.font-sm{
-  font-size: 15px;
+.Soe_fontVertical{
+  // -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  letter-spacing:4px;
+}
+.Soe_fontSm{
+  font-size: 10px;
 }
