@@ -47,7 +47,8 @@ $(function () {
             "lengthMenu": "顯示 _MENU_ 筆資料"
       },
         "columnDefs": [
-                        { "width": "20%", "targets": 2 },
+            { "width": "20%", "targets": 2 },
+            { "width": "4%", "targets": 0 },
                     ],
         "initComplete": function (settings, json) {
             $(".datatable-RWDcard").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");

@@ -179,6 +179,11 @@
                     <table class="table datatable-RWDcard">
                       <thead>
                         <tr class="tr-only-hide">
+                          <th>
+                            <button type="button" class="btn btn-info float-right" style="margin-right: 5px;" data-bs-toggle="modal" data-bs-target="#checkList">
+                              <i class="far fa-check-circle text-white"></i>
+                            </button>
+                          </th>
                           <th>Product:</th>
                           <th nowrap>Lux</th>
                           <th>AMOUNT</th>
@@ -194,6 +199,7 @@
                       </thead>
                       <tbody>
                         <tr>
+                          <th></th>
                           <th data-th="Product">Campaign:</th>
                           <td data-th="Lux" class="text-start" nowrap>LG_2022_Q1_Mar-Apr_VCC Campaign</td>
                           <td></td>
@@ -207,6 +213,11 @@
                           <td></td>
                         </tr>
                         <tr>
+                          <th>
+                            <div class="form-check form-check-inline d-inline-flex mx-auto">
+                              <input class="form-check-input" type="checkbox" id="Checkbox3" value="option2">
+                            </div>
+                          </th>
                           <th data-th="Product">Items:</th>
                           <td data-th="Lux" class="text-start">Internet - Facebook - 3月媒體宣傳</td>
                           <td data-th="AMOUNT">99,998</td>
@@ -220,6 +231,11 @@
                           <td data-th="Total">103,898</td>
                         </tr>
                         <tr>
+                          <th>
+                            <div class="form-check form-check-inline d-inline-flex mx-auto mx-auto">
+                              <input class="form-check-input" type="checkbox" id="Checkbox3" value="option2">
+                            </div>
+                          </th>
                           <th></th>
                           <td data-th="Lux" class="text-start">Internet - YouTube</td>
                           <td data-th="AMOUNT">199,687</td>
@@ -233,6 +249,11 @@
                           <td data-th="Total">209,671</td>
                         </tr>
                         <tr>
+                          <th>
+                            <div class="form-check form-check-inline d-inline-flex mx-auto">
+                              <input class="form-check-input" type="checkbox" id="Checkbox3" value="option2">
+                            </div>
+                          </th>
                           <th></th>
                           <td data-th="Lux" class="text-start">Internet - 追劇行銷 - 愛奇藝</td>
                           <td data-th="AMOUNT">150,000</td>
@@ -246,6 +267,11 @@
                           <td data-th="Total">149,175</td>
                         </tr>
                         <tr>
+                          <th>
+                            <div class="form-check form-check-inline d-inline-flex mx-auto">
+                              <input class="form-check-input" type="checkbox" id="Checkbox3" value="option2">
+                            </div>
+                          </th>
                           <th></th>
                           <td data-th="Lux" class="text-start">Internet - Google</td>
                           <td data-th="AMOUNT">88,651</td>
@@ -259,6 +285,11 @@
                           <td data-th="Total">92,108</td>
                         </tr>
                         <tr>
+                          <th>
+                            <div class="form-check form-check-inline d-inline-flex mx-auto">
+                              <input class="form-check-input" type="checkbox" id="Checkbox3" value="option2">
+                            </div>
+                          </th>
                           <th></th>
                           <td data-th="Lux" class="text-start">Internet - 馬謝瑾萱 Pd</td>
                           <td data-th="AMOUNT">8,000</td>
@@ -272,6 +303,11 @@
                           <td data-th="Total">8,640</td>
                         </tr>
                         <tr>
+                          <th>
+                            <div class="form-check form-check-inline d-inline-flex mx-auto">
+                              <input class="form-check-input" type="checkbox" id="Checkbox3" value="option2">
+                            </div>
+                          </th>
                           <th></th>
                           <td data-th="Lux" class="text-start">Omnet - VL</td>
                           <td data-th="AMOUNT">100,000</td>
@@ -287,6 +323,7 @@
                       </tbody>
                       <tfoot>
                         <tr>
+                          <th></th>
                           <th></th>
                           <th data-th="Sub-Total" class="text-start">Sub-Total</th>
                           <th data-th="AMOUNT">646,336</th>
@@ -328,7 +365,7 @@
                         </tr>
                         <tr>
                           <th>
-                            <div class="form-check form-check-inline d-inline-flex">
+                            <div class="form-check form-check-inline d-inline-flex mx-auto">
                               <input class="form-check-input" type="checkbox" id="Checkbox3" value="option2">
                               <label class="form-check-label d-flex align-items-center" for="Checkbox3"> 外幣
                                </label>
@@ -387,6 +424,65 @@
             </div><!-- /.col -->
           </div><!-- /.row -->
         </div><!-- /.container-fluid -->
+      </section>
+
+      <!-- Modal -->
+      <section>
+        <div class="modal fade" id="checkList" tabindex="-1" >
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <table class="table datatable-RWDcard nowrap" style="width:100%">
+                  <thead>
+                    <tr class="tr-only-hide">
+                      <th></th>
+                      <th>Client Name(TW)</th>
+                      <th>Prebilling GUI No.</th>
+                      <th nowrap>Prebilling GUI Date</th>
+                      <th>Prebilling Amount</th>
+                      <th nowrap>Prebilling Balance</th>
+                      <th>Prebilling Description</th>
+                    </tr>
+                  </thead>
+                  <tbody class="js-itemArea">
+                    <tr>
+                      <td>
+                        <div class="form-check form-check-inline d-inline-flex mx-auto">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                      </td>
+                      <td class="text-center">嬌生股份有限公司</td>
+                      <td class="text-center">PB55663344</td>
+                      <td class="text-center">2022/06/24</td>
+                      <td class="text-center">only (TWD)未稅</td>
+                      <td class="text-center">餘額(TWD)未稅</td>
+                      <td class="text-center">940147552</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check form-check-inline d-inline-flex mx-auto">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                      </td>
+                      <td class="text-center">嬌生股份有限公司</td>
+                      <td class="text-center">PV77887780</td>
+                      <td class="text-center">2022/06/28</td>
+                      <td class="text-center">only (TWD)未稅</td>
+                      <td class="text-center">餘額(TWD)未稅</td>
+                      <td class="text-center">123456778</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- /.content -->
     </div>
