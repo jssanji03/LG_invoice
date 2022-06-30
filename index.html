@@ -416,11 +416,16 @@
                 </div>
     
                 <!-- this row will not appear when printing -->
-                <div class="row no-print mt-3">
-                  <div class="col-12">
-                    <a href="invoice-print.html" rel="noopener" target="_blank" class="btn btn-primary float-right"><i
-                        class="fas fa-print"></i> Print</a>
-                    <button type="button" class="btn btn-secondary float-right" style="margin-right: 5px;">
+                <div class="row no-print mt-3 justify-content-end">
+                  <div class="col-auto">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#templateCheck">
+                      選擇版型
+                    </button>
+                    <button onClick="printOut('printIt')" rel="noopener" class="btn btn-primary mx-1"><i
+                        class="fas fa-print"></i>
+                      Print</button>
+                    <button type="button" class="btn btn-secondary mx-1">
                       <i class="fas fa-download"></i> PDF
                     </button>
                   </div>
@@ -489,6 +494,99 @@
             </div>
           </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="templateCheck" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">選擇版型</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row p-2">
+                  <div class="col-lg-4 p-2" style="width: 20rem;">
+                    <div class="Soe_templateCard ">
+                      <div class="col-12" style="height: 250px;">
+                        <img src="./dist/img/template/Amount&AC.png" class="img-fluid" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <div class="form-group text-center m-0">
+                          <div class="form-check">
+                            <input class="form-check-input" name="list" type="radio" value="amount" id="amount">
+                            <label for="amount" class="form-check-label">Amount&AC</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 p-2">
+                    <div class="Soe_templateCard ">
+                      <div class="col-12" style="height: 250px;">
+                        <img src="./dist/img/template/Amount AC&EPD.png" class="img-fluid" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <div class="form-group text-center m-0">
+                          <div class="form-check">
+                            <input class="form-check-input" name="list" type="radio" value="amount_ac_EPD" id="amount_ac_EPD">
+                            <label for="amount_ac_EPD" class="form-check-label">Amount AC&EPD</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 p-2">
+                    <div class="Soe_templateCard ">
+                      <div class="col-12" style="height: 250px;">
+                        <img src="./dist/img/template/Amount AC&Rebate.png" class="img-fluid" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <div class="form-group text-center m-0">
+                          <div class="form-check">
+                            <input class="form-check-input" name="list" type="radio" value="amount_ac_Rebate" id="amount_ac_Rebate">
+                            <label for="amount_ac_Rebate" class="form-check-label">Amount AC&Rebate</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 p-2">
+                    <div class="Soe_templateCard ">
+                      <div class="col-12" style="height: 250px;">
+                        <img src="./dist/img/template/Amount Prebilling.png" class="img-fluid" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <div class="form-group text-center m-0">
+                          <div class="form-check">
+                            <input class="form-check-input" name="list" type="radio" value="amount_Prebilling" id="amount_Prebilling">
+                            <label for="amount_Prebilling" class="form-check-label">Amount Prebilling</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 p-2">
+                    <div class="Soe_templateCard ">
+                      <div class="col-12" style="height: 250px;">
+                        <img src="./dist/img/template/Amount AC&Benz.png" class="img-fluid" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <div class="form-group text-center m-0">
+                          <div class="form-check">
+                            <input class="form-check-input" name="list" type="radio" value="amount_ac_Benz" id="amount_ac_Benz">
+                            <label for="amount_ac_Benz" class="form-check-label">Amount AC&Benz</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary js-preView">預覽頁面</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- /.content -->
     </div>
@@ -525,6 +623,7 @@
   <script src="./dist/js/adminlte.min.js"></script>
   <!-- custom -->
   <script src="./dist/js/component.js"></script>
+  <script src="./dist/js/index.js"></script>
   <!-- Page specific script -->
 </body>
 

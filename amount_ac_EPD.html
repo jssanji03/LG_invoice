@@ -171,7 +171,7 @@
                 <!-- Table row -->
                 <div class="row mt-2 invoiceBody">
                   <div class="col-12 table-responsive">
-                    <table class="table js-datatable-List ">
+                    <table class="table js-table-amount">
                       <thead>
                         <tr class="tr-only-hide">
                           <th>Product:</th>
@@ -292,7 +292,7 @@
                   <!-- /.col -->
                   <div class="col-lg-5 col-sm-5 col-12">
                     <div class="table-responsive">
-                      <table class="table">
+                      <table class="table ">
                         <tr>
                           <th>VAT 5%:</td>
                           <td>$33,358</td>
@@ -334,15 +334,6 @@
 
                 <!-- this row will not appear when printing -->
                 <div class="row no-print mt-3 justify-content-end">
-                  <div class="col-auto">
-                    <select class="js-select select2 form-select" onChange="location = this.options[this.selectedIndex].value;">
-                      <option selected="selected">---請選擇---</option>
-                      <option value="./amount.html">Amount AC</option>
-                      <option value="./amount_ac_EPD.html">Amount AC&EPD</option>
-                      <option value="./amount_ac_Rebate.html">Amount AC&Rebate</option>
-                      <option value="#">Amount Prebilling</option>
-                    </select>
-                  </div>
                   <div class="col-auto">
                     <button onClick="printOut('printIt')" rel="noopener" class="btn btn-primary float-right"><i
                         class="fas fa-print"></i>

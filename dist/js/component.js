@@ -5,17 +5,15 @@ $(function () {
   $('.select2').select2({
       theme: 'bootstrap4'
   })
-  $('.js-datatable-List').DataTable({
-      
-      "responsive": false,
-      "lengthChange": false,
-      "autoWidth": false,
+  $('.js-table-amount').DataTable({
+        "responsive": false,
+        "lengthChange": false,
+        "autoWidth": false,
       "searching": false,
-      "paging": false,
-      "info": false,
-      // "scrollX": true,
-      "ordering": false,
-      "language": {
+        paging:false,
+        "info": false,
+        "ordering": false,
+        "language": {
             "info": "顯示 _PAGE_ 至 _PAGES_",
             "search": "搜尋 :",
             "paginate": {
@@ -28,12 +26,11 @@ $(function () {
             { "width": "20%", "targets": 2 },
                     ],
         "initComplete": function (settings, json) {
-            $(".datatable-RWDcard").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
+            $(".js-datatable-List").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
         },
     }
   );
   $('.datatable-RWDcard').DataTable({
-      
       "responsive": false,
       "lengthChange": false,
       "autoWidth": false,
@@ -61,7 +58,6 @@ $(function () {
     }
   );
   $('.datatable-invoice').DataTable({
-      
       "responsive": false,
       "lengthChange": false,
       "autoWidth": false,
