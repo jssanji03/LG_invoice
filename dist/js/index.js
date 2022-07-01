@@ -1,12 +1,11 @@
 
 const previewBtn = document.querySelector(".js-preView")
+const largeImg = document.querySelectorAll(".js-img")
 previewBtn.addEventListener("click",preView)
 
 function preView() {
   const val = $('input:radio[name="list"]:checked').val();
   function defaultPage(grid) {
-    console.log(grid);
-    // window.location.href='../../amount.html';
     window.location.href=`"../../${grid}.html`;
   }
   
@@ -23,3 +22,19 @@ function preView() {
       break;
   }
 }
+const preViewImg = (e) => {
+  const url = e.target.getAttribute("src");
+  const showImg = document.querySelectorAll(".js-lightboxImg");
+  const lightBox = document.querySelector(".js-lightbox");
+  showImg.forEach((x) => {
+    lightBox.style.display = "block";
+    x.setAttribute("src", `${url}`);
+    
+  })
+  lightBox.addEventListener("click", () => {
+    lightBox.style.display = "none";
+  })
+}
+largeImg.forEach((item) => {
+  item.addEventListener("click", preViewImg);
+})

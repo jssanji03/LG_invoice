@@ -12989,4 +12989,34 @@ dd, dt {
 .invoiceContent {
   border-top: 2px double #000;
   border-bottom: 2px double #000;
+}
+
+.Soe_lightbox {
+  /* Hidden lightbox image */
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.Soe_lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  margin-top: 2%;
+}
+
+.Soe_close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 3em;
+  color: #fff;
+  text-decoration: none;
+}
+.Soe_close:hover {
+  color: coral;
 }/*# sourceMappingURL=style.css.map */
