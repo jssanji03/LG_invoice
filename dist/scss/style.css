@@ -12781,6 +12781,13 @@ table.dataTable tfoot th {
     text-align: start !important;
     color: #325eaf;
   }
+  .datatable-RWDcard tbody tr th .form-control-sm, .datatable-RWDcard tbody tr th .input-group, .datatable-RWDcard tbody tr td .form-control-sm, .datatable-RWDcard tbody tr td .input-group {
+    width: 60% !important;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    text-align: end;
+  }
   .datatable-RWDcard tbody tr th input.form-control, .datatable-RWDcard tbody tr td input.form-control {
     width: 90%;
   }
@@ -13019,4 +13026,51 @@ dd, dt {
 }
 .Soe_close:hover {
   color: coral;
+}
+
+.loginPage2 {
+  height: 100vh;
+}
+.loginPage2 .loginBg {
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 0px;
+}
+.loginPage2 .loginBg .loginPic {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.loginPage2 .loginPage {
+  background-color: transparent;
+  width: 400px;
+  margin: 0px auto;
+  margin-top: 150px;
+}
+.loginPage2 .loginPage .loginTitle {
+  line-height: 100px;
+  color: #A91735;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+.loginPage2 .loginPage .password_input {
+  position: relative;
+}
+.loginPage2 .loginPage .showpassword {
+  position: absolute;
+  right: 5%;
+  top: 35%;
+  opacity: 0.3;
+}
+.loginPage2 .loginPage .loginButton {
+  margin-top: 0px;
+}
+.loginPage2 .loginPage .loginButton .btn-login {
+  border-radius: 20px;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #A91735;
+  color: #FFF;
 }/*# sourceMappingURL=style.css.map */

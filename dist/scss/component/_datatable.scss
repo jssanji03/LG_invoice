@@ -123,7 +123,11 @@ table.dataTable{
             text-align: start !important;
             color: $primary;
           }
-
+          .form-control-sm,.input-group{
+            width:60% !important;
+            display: inline-flex;
+            text-align: end;
+          }
           input.form-control {
             width: 90%;
           }

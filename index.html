@@ -79,9 +79,9 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="./amount.html" class="nav-link ">
+                  <a href="./amount_ac.html" class="nav-link ">
                     <i class="fas fa-user-alt nav-icon"></i>
-                    <p>Amount&AC</p>
+                    <p>Amount</p>
                   </a>
                 </li>
               </ul>
@@ -227,13 +227,30 @@
                           <th data-th="Product">Items:</th>
                           <td data-th="Lux" class="text-start">Internet - Facebook - 3月媒體宣傳</td>
                           <td data-th="AMOUNT">99,998</td>
-                          <td data-th="AC %">5.9%</td>
-                          <td data-th="AC">5,900</td>
-                          <td data-th="Rebate %"></td>
-                          <td data-th="Rebate">0</td>
-                          <td data-th="EPD %">2%</td>
-                          <td data-th="EPD" class="text-danger">(2,000)</td>
-                          <td data-th="Advanced"></td>
+                          <td data-th="AC %">
+                            <div class="input-group input-group-sm flex-nowrap">
+                              <input type="number" class="form-control" value="5.9">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="AC">
+                            <input type="number" class="form-control form-control-sm js-ac  d-inline-flex flex-nowrap" value="5900">
+                          </td>
+                          <td data-th="Rebate %">
+                            <div class="input-group input-group-sm flex-nowrap">
+                              <input type="number" class="form-control" value="0">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="Rebate"><input type="number" class="form-control form-control-sm js-ac" value="0"></td>
+                          <td data-th="EPD %">
+                            <div class="input-group input-group-sm flex-nowrap">
+                              <input type="number" class="form-control" value="2">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="EPD" class="text-danger"><input type="number" class="form-control form-control-sm js-ac" value="-2000"></td>
+                          <td data-th="Advanced">0</td>
                           <td data-th="Total">103,898</td>
                         </tr>
                         <tr>
@@ -245,12 +262,33 @@
                           <th></th>
                           <td data-th="Lux" class="text-start">Internet - YouTube</td>
                           <td data-th="AMOUNT">199,687</td>
-                          <td data-th="AC %">7.00%</td>
-                          <td data-th="AC">13,978</td>
-                          <td data-th="Rebate %"></td>
-                          <td data-th="Rebate">0</td>
-                          <td data-th="EPD %">2%</td>
-                          <td data-th="EPD" class="text-danger">(3,994)</td>
+                          <td data-th="AC %">
+                            <div class="input-group input-group-sm  d-inline-flex flex-nowrap">
+                              <input type="number" class="form-control" value="7.0">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="AC">
+                            <input type="number" class="form-control form-control-sm js-ac  flex-nowrap" value="13978">
+                          </td>
+                          <td data-th="Rebate %">
+                            <div class="input-group input-group-sm  d-inline-flex flex-nowrap">
+                              <input type="number" class="form-control" value="0">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="Rebate">
+                            <input type="number" class="form-control form-control-sm js-ac  flex-nowrap" value="0">
+                          </td>
+                          <td data-th="EPD %">
+                            <div class="input-group input-group-sm  d-inline-flex flex-nowrap">
+                              <input type="number" class="form-control" value="2">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="EPD" class="text-danger">
+                            <input type="number" class="form-control form-control-sm js-ac  flex-nowrap" value="3994">
+                          </td>
                           <td data-th="Advanced"></td>
                           <td data-th="Total">209,671</td>
                         </tr>
@@ -263,12 +301,33 @@
                           <th></th>
                           <td data-th="Lux" class="text-start">Internet - 追劇行銷 - 愛奇藝</td>
                           <td data-th="AMOUNT">150,000</td>
-                          <td data-th="AC %">3.90%</td>
-                          <td data-th="AC">5,850</td>
-                          <td data-th="Rebate %">2.5%</td>
-                          <td data-th="Rebate" class="text-danger">(3,750)</td>
-                          <td data-th="EPD %">2%</td>
-                          <td data-th="EPD" class="text-danger">(2,925)</td>
+                          <td data-th="AC %">
+                            <div class="input-group input-group-sm  d-inline-flex flex-nowrap">
+                              <input type="number" class="form-control" value="3.9">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="AC">
+                            <input type="number" class="form-control form-control-sm js-ac  flex-nowrap" value="5850">
+                          </td>
+                          <td data-th="Rebate %">
+                            <div class="input-group input-group-sm  d-inline-flex flex-nowrap">
+                              <input type="number" class="form-control" value="2.5">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="Rebate" class="text-danger">
+                            <input type="number" class="form-control form-control-sm js-ac  flex-nowrap" value="3750">
+                          </td>
+                          <td data-th="EPD %">
+                            <div class="input-group input-group-sm  d-inline-flex flex-nowrap">
+                              <input type="number" class="form-control" value="2">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="EPD" class="text-danger">
+                            <input type="number" class="form-control form-control-sm js-ac  flex-nowrap" value="2925">
+                          </td>
                           <td data-th="Advanced"></td>
                           <td data-th="Total">149,175</td>
                         </tr>
@@ -281,12 +340,33 @@
                           <th></th>
                           <td data-th="Lux" class="text-start">Internet - Google</td>
                           <td data-th="AMOUNT">88,651</td>
-                          <td data-th="AC %">5.90%</td>
-                          <td data-th="AC">5,230</td>
-                          <td data-th="Rebate %"></td>
-                          <td data-th="Rebate">0</td>
-                          <td data-th="EPD %">2%</td>
-                          <td data-th="EPD" class="text-danger">(1,773)</td>
+                          <td data-th="AC %">
+                            <div class="input-group input-group-sm  d-inline-flex flex-nowrap">
+                              <input type="number" class="form-control" value="5.9">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="AC">
+                            <input type="number" class="form-control form-control-sm js-ac  flex-nowrap" value="5230">
+                          </td>
+                          <td data-th="Rebate %">
+                            <div class="input-group input-group-sm flex-nowrap">
+                              <input type="number" class="form-control" value="">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="Rebate">
+                            <input type="number" class="form-control form-control-sm js-ac  flex-nowrap" value="0">
+                          </td>
+                          <td data-th="EPD %">
+                            <div class="input-group input-group-sm flex-nowrap">
+                              <input type="number" class="form-control" value="2">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="EPD" class="text-danger">
+                            <input type="number" class="form-control form-control-sm js-ac  flex-nowrap" value="1773">
+                          </td>
                           <td data-th="Advanced"></td>
                           <td data-th="Total">92,108</td>
                         </tr>
@@ -299,12 +379,33 @@
                           <th></th>
                           <td data-th="Lux" class="text-start">Internet - 馬謝瑾萱 Pd</td>
                           <td data-th="AMOUNT">8,000</td>
-                          <td data-th="AC %">10.00%</td>
-                          <td data-th="AC">800</td>
-                          <td data-th="Rebate %"></td>
-                          <td data-th="Rebate">0</td>
-                          <td data-th="EPD %">2%</td>
-                          <td data-th="EPD" class="text-danger">(160)</td>
+                          <td data-th="AC %">
+                            <div class="input-group input-group-sm flex-nowrap">
+                              <input type="number" class="form-control" value="10">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="AC">
+                            <input type="number" class="form-control form-control-sm js-ac  flex-nowrap" value="800">
+                          </td>
+                          <td data-th="Rebate %">
+                            <div class="input-group input-group-sm flex-nowrap">
+                              <input type="number" class="form-control" value="">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="Rebate">
+                            <input type="number" class="form-control form-control-sm js-ac  flex-nowrap" value="0">
+                          </td>
+                          <td data-th="EPD %">
+                            <div class="input-group input-group-sm flex-nowrap">
+                              <input type="number" class="form-control" value="2">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="EPD" class="text-danger">
+                            <input type="number" class="form-control form-control-sm js-ac  flex-nowrap" value="160">
+                          </td>
                           <td data-th="Advanced"></td>
                           <td data-th="Total">8,640</td>
                         </tr>
@@ -317,12 +418,33 @@
                           <th></th>
                           <td data-th="Lux" class="text-start">Omnet - VL</td>
                           <td data-th="AMOUNT">100,000</td>
-                          <td data-th="AC %">2.00%</td>
-                          <td data-th="AC">2,000</td>
-                          <td data-th="Rebate %">15.0%</td>
-                          <td data-th="Rebate" class="text-danger">(15,000)</td>
-                          <td data-th="EPD %" data-th="Rebate">2%</td>
-                          <td data-th="EPD" class="text-danger">(1,700)</td>
+                          <td data-th="AC %">
+                            <div class="input-group input-group-sm flex-nowrap">
+                              <input type="number" class="form-control" value="2">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="AC">
+                            <input type="number" class="form-control form-control-sm js-ac  flex-nowrap" value="2000">
+                          </td>
+                          <td data-th="Rebate %">
+                            <div class="input-group input-group-sm flex-nowrap">
+                              <input type="number" class="form-control" value="15">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="Rebate" class="text-danger">
+                            <input type="number" class="form-control form-control-sm js-ac  flex-nowrap" value="15000">
+                          </td>
+                          <td data-th="EPD %" data-th="Rebate">
+                            <div class="input-group input-group-sm flex-nowrap">
+                              <input type="number" class="form-control" value="2">
+                              <span class="input-group-text" id="basic-addon2">%</span>
+                            </div>
+                          </td>
+                          <td data-th="EPD" class="text-danger">
+                            <input type="number" class="form-control form-control-sm js-ac  flex-nowrap" value="1700">
+                          </td>
                           <td data-th="Advanced"></td>
                           <td data-th="Total">85,300</td>
                         </tr>
@@ -351,18 +473,23 @@
     
                 <div class="row mt-3 invoiceFooter">
                   <!-- accepted payments column -->
-                  <div class="col-lg-6 col-12">
+                  <div class="col-lg-5 col-12">
                     <label for="MemoTitle" class="form-label">Memo:</label>
                     <textarea class="form-control" id="MemoTitle" rows="5"></textarea>
                   </div>
                   <!-- /.col -->
-                  <div class="col-lg-6 col-12">
+                  <div class="col-lg-7 col-12">
                     <div class="table-responsive">
                       <table class="table">
                         <tr>
                           <th></th>
                           <th style="width:40%">VAT 5%:</td>
-                          <td>$32,440</td>
+                          <td>
+                            <div class="input-group input-group-sm flex-nowrap">
+                              <span class="input-group-text" id="basic-addon2">$</span>
+                              <input type="number" class="form-control" value="32440">
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <th></th>
@@ -370,7 +497,7 @@
                           <td>$681,232</td>
                         </tr>
                         <tr>
-                          <th>
+                          <th style="width:20%">
                             <div class="form-check form-check-inline d-inline-flex mx-auto">
                               <input class="form-check-input" type="checkbox" id="Checkbox3" value="option2">
                               <label class="form-check-label d-flex align-items-center" for="Checkbox3"> 外幣
@@ -389,12 +516,19 @@
                         <tr>
                           <th></th>
                           <th>Convert Rate:</th>
-                          <td>$265.24</td>
+                          <td>
+                            <input type="number" class="form-control form-control-sm js-ac  flex-nowrap" value="30">
+                          </td>
                         </tr>
                         <tr>
                           <th></th>
                           <th>Net Billing Amount in USD:</th>
-                          <td>$22,707.73</td>
+                          <td>
+                            <div class="input-group input-group-sm flex-nowrap">
+                              <span class="input-group-text" id="basic-addon2">$</span>
+                              <input type="number" class="form-control" value="22707">
+                            </div>
+                          </td>
                         </tr>
                       </table>
                     </div>
@@ -508,7 +642,24 @@
                   <img class="js-lightboxImg" src=""  loading="lazy">
                 </div>
                 <!-- lightbox end -->
-                <div class="row p-2 justify-content-around">
+                <div class="row p-2 justify-content-center">
+                  <div class="col-lg-4 p-2" style="width: 20rem;">
+                    <div class="Soe_templateCard ">
+                      <div class="col-12" style="height: 250px;">
+                        <a href="#img1">
+                          <img src="./dist/img/template/Amount All.png" class="img-fluid js-img" alt="...">
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <div class="form-group text-center m-0">
+                          <div class="form-check">
+                            <input class="form-check-input" name="list" type="radio" value="amount_All" id="amount_all">
+                            <label for="amount_all" class="form-check-label">Amount All</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="col-lg-4 p-2" style="width: 20rem;">
                     <div class="Soe_templateCard">
                       <div class="col-12" style="height: 250px;">
@@ -519,8 +670,8 @@
                       <div class="card-body">
                         <div class="form-group text-center m-0">
                           <div class="form-check">
-                            <input class="form-check-input" name="list" type="radio" value="amount" id="amount">
-                            <label for="amount" class="form-check-label">Amount&AC</label>
+                            <input class="form-check-input" name="list" type="radio" value="amount_ac" id="amount_ac">
+                            <label for="amount_ac" class="form-check-label">Amount&AC</label>
                           </div>
                         </div>
                       </div>
@@ -581,19 +732,37 @@
                     <div class="Soe_templateCard ">
                       <div class="col-12" style="height: 250px;">
                         <a href="#img1">
-                          <img src="./dist/img/template/Amount AC&Benz.png" class="img-fluid js-img" alt="...">
+                          <img src="./dist/img/template/Amount.png" class="img-fluid js-img" alt="...">
                         </a>
                       </div>
                       <div class="card-body">
                         <div class="form-group text-center m-0">
                           <div class="form-check">
-                            <input class="form-check-input" name="list" type="radio" value="amount_ac_Benz" id="amount_ac_Benz">
-                            <label for="amount_ac_Benz" class="form-check-label">Amount AC&Benz</label>
+                            <input class="form-check-input" name="list" type="radio" value="amount_amount" id="amount_amount">
+                            <label for="amount_amount" class="form-check-label">Amount</label>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="col-lg-4 p-2" style="width: 20rem;">
+                    <div class="Soe_templateCard ">
+                      <div class="col-12" style="height: 250px;">
+                        <a href="#img1">
+                          <img src="./dist/img/template/Invoice_AC.png" class="img-fluid js-img" alt="...">
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <div class="form-group text-center m-0">
+                          <div class="form-check">
+                            <input class="form-check-input" name="list" type="radio" value="invoice_ac" id="invoice_ac">
+                            <label for="invoice_ac" class="form-check-label">Invoice AC</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
               <div class="modal-footer">

@@ -10,7 +10,7 @@ function preView() {
   }
   
   switch (val) {
-      case 'amount': defaultPage (val);
+      case 'amount_ac': defaultPage (val);
       break;
       case 'amount_ac_EPD': defaultPage (val);
       break;
@@ -18,7 +18,11 @@ function preView() {
       break;
       case 'amount_Prebilling': defaultPage (val);
       break;
-      case 'amount_ac_Benz': defaultPage (val);
+      case 'amount_All': defaultPage (val);
+      break;
+      case 'amount_amount': defaultPage (val);
+      break;
+      case 'invoice_ac': defaultPage (val);
       break;
   }
 }
